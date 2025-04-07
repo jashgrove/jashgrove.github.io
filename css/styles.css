@@ -1,0 +1,42 @@
+@import url("about.css");
+@import url("buttons.css");
+@import url("footer.css");
+@import url("header.css");
+@import url("hero.css");
+@import url("projects.css");
+@import url("techstack.css");
+
+:root {
+  --hero-bg: #dce9ff;
+  --primary-color: #068fc5;
+  --secondary-color: #ffb300;
+  --heading-color: #333;
+  --text-color: #555;
+  --white: #ffffff;
+  --featured-bg: #ffffff;
+  --tech-bg: #f4f8ff;
+  --about-bg: #ffe066;
+  --footer-bg: #f2f2f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: var(--text-color);
+  background-color: var(--white);
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: var(--secondary-color);
+}

@@ -1,0 +1,26 @@
+.tech-stack {
+  background-color: var(--tech-bg);
+  padding: 60px 20px;
+  text-align: center;
+}
+.tech-stack h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: var(--heading-color);
+}
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tech-item p {
+  margin-top: 10px;
+  color: var(--text-color);
+}

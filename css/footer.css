@@ -1,0 +1,15 @@
+footer {
+  background-color: var(--footer-bg);
+  text-align: center;
+  padding: 20px;
+}
+footer p {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 15px 20px;
+  }
+}

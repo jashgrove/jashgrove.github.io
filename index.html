@@ -1,1 +1,184 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jasper Ashgrove</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Jasper Ashgrove</h1>
+      <h2>Full Stack Developer</h2>
+      <div class="hero-buttons">
+        <a
+          href="https://www.linkedin.com/in/jasper-ashgrove/"
+          class="btn-primary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+        <a
+          href="https://github.com/jashgrove"
+          class="btn-secondary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured-projects" id="projects">
+    <h2>Featured Projects</h2>
+    <div class="project-cards">
+      <div class="project-card">
+        <img
+          src="https://i.ibb.co/ccCdbwnL/Screenshot-2025-03-28-141824.png"
+          alt="Yarnlore"
+        />
+        <h3>Yarnlore</h3>
+        <p>Ruby on Rails • Hotwire • JavaScript</p>
+          <div class="card-overlay">
+            <button class="overlay-close">&times;</button>
+            <h3>About Yarnlore</h3>
+            <p>
+              A social media platform for fibre arts creators to share, like, and comment on patterns and projects.
+              Built as part of a two-week development sprint. I developed the like, favourite, and comment systems, implemented user profiles, and designed and styled key pages including the navigation, feed, and pattern views.
+            </p>
+          </div>
+        <a
+          href="https://github.com/danvyho/yarnlore"
+          class="btn-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Code
+        </a>
+        <button class="btn-link btn-about">About</button>
+      </div>
+      <div class="project-card">
+        <img
+          src="https://i.ibb.co/vvZ600fP/Untitled-design.png"
+          alt="Catered By Caitlyn"
+        />
+        <h3>Catered By Caitlyn</h3>
+        <p>CMS • Ruby on Rails • JavaScript</p>
+        <div class="card-overlay">
+          <button class="overlay-close">&times;</button>
+          <h3>About Catered By Caitlyn</h3>
+          <p>
+            ** new / in progress **
+            <p>
+          <p>
+            A content management system for a catering business, allowing users to manage orders, menus, and customer interactions.
+            Built with Ruby on Rails and JavaScript, it features a user-friendly interface and robust backend functionality.
+          </p>
+        </div>
+        <a
+          href="#"
+          class="btn-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Code
+        </a>
+        <button class="btn-link btn-about">About</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="tech-stack" id="tech-stack">
+    <h2>Tech Stack</h2>
+    <div class="tech-grid">
+      <div class="tech-item">
+        <img
+          src="https://i.ibb.co/m5bzsmfG/Ruby-on-Rails.png"
+          alt="Ruby on Rails"
+          style="max-width: 50px;"
+        />
+        <p>Ruby on Rails</p>
+      </div>
+      <div class="tech-item">
+        <img
+          src="https://i.ibb.co/7NkZrkxc/Java-Script.png"
+          alt="JavaScript"
+          style="max-width: 50px;"
+        />
+        <p>JavaScript</p>
+      </div>
+      <div class="tech-item">
+        <img
+          src="https://i.ibb.co/TBf6f2NW/Postgres-SQL.png"
+          alt="PostgreSQL"
+          style="max-width: 50px;"
+        />
+        <p>PostgreSQL</p>
+      </div>
+      <div class="tech-item">
+        <img
+          src="https://i.ibb.co/ccdgV8HD/HTML5.png"
+          alt="HTML"
+          style="max-width: 50px;"
+        />
+        <p>HTML</p>
+      </div>
+      <div class="tech-item">
+        <img
+          src="https://i.ibb.co/SXbCs29b/CSS3.png"
+          alt="CSS"
+          style="max-width: 50px;"
+        />
+        <p>CSS</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="cta" id="about">
+    <div class="about-container">
+      <div class="about-text">
+        <h2>Put the Fun in Function ❀</h2>
+        <p>
+          Hi, I'm Jasper — a newly minted fullstack developed based in Montreal. I love creating clean, well-structured backend login and giving it just the right touch of whimsy on the front.
+        </p>
+        <p>
+          <b>Currently Learning:</b> React
+        </p>
+        <button class="btn-link" id="contactBtn">Get in Touch</button>
+      </div>
+      <div class="about-image">
+        <img
+          src="https://i.ibb.co/xK6wqxwg/Screenshot-2025-04-02-194044.png"
+          alt="Photo of me"
+        />
+      </div>
+    </div>
+  </section>
+
+  <div id="contactModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="Close Contact Form">&times;</button>
+      <h2 id="modalTitle">Get in Touch</h2>
+      <form id="contactForm" action="https://formspree.io/f/xblgpabp" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" class="btn-primary">Send</button>
+      </form>
+      <div id="formMessage"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

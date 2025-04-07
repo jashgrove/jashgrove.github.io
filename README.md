@@ -21,7 +21,7 @@ I'm a **Junior Fullstack Developer** based in Montreal, with a love for clean ba
 
 ## 📫 Let's Connect
 
-- 🌐 **Portfolio:** [jasperashgrove.dev]((https://jashgrove.github.io/)) *(update with your actual link!)*
+- 🌐 **Portfolio:** [jasperashgrove.dev](https://jashgrove.github.io/) 
 - 📧 **Email:** [jasperashgrove@gmail.com](mailto:jasperashgrove@gmail.com)  
 - 🐙 **GitHub:** [@jashgrove](https://github.com/jashgrove)  
 - 💼 **LinkedIn:** [Jasper Ashgrove](https://www.linkedin.com/in/jasper-ashgrove/)
